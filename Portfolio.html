@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+     
+    <nav class="navbar">
+         <p> Medam Pavan Kumar Reddy</p>
+       
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, Everyone! I’m M. Pavan Kumar Reddy, a second-year B.Tech student specializing in Artificial Intelligence and Data Science at SRKR Engineering College, Bhimavaram, Andhra Pradesh.
+
+I’m passionate about emerging technologies, with a strong interest in Python, Java, and Front-End Development. I'm driven to explore how intelligent systems can create real-world impact through automation and data-driven solutions.
+
+Beyond academics, I enjoy working on projects, participating in coding challenges, and engaging with tech communities to continually grow and stay current in the field. I’m always eager to learn, collaborate, and contribute meaningfully to the tech world.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h1>Projects</h1>
+
+        <!-- Rock Paper Scissors Game -->
+        <div class="game-container">
+            <h2>Rock Paper Scissors</h2>
+            <div class="choices">
+                <button class="choice-btn" data-choice="rock" aria-pressed="false">✊ Rock</button>
+                <button class="choice-btn" data-choice="paper" aria-pressed="false">✋ Paper</button>
+                <button class="choice-btn" data-choice="scissors" aria-pressed="false">✌️ Scissors</button>
+            </div>
+            <div class="result" id="result">Make your move!</div>
+            <div class="computer-choice" id="computer-choice"></div>
+            <div class="scoreboard">
+                Player: <span id="player-score">0</span> |
+                Computer: <span id="computer-score">0</span>
+            </div>
+            <button class="reset-btn" id="reset-btn">Reset Game</button>
+            <div class="description">
+                <strong>Description:</strong>
+                <ul>
+                    <li>Play against the computer.</li>
+                    <li>Track your scores across rounds.</li>
+                </ul>
+                <strong>Technologies:</strong>
+                <ul>
+                    <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Weather App Project -->
+        <div class="project">
+            <h2 id="pavan">Weather App</h2>
+            <img src="Weather.png" alt="Weather App Screenshot">
+            <div class="description">
+                <strong>Description:</strong>
+                <ul>
+                    <li>Shows real-time weather data.</li>
+                    <li>Includes temperature, condition, humidity, and wind speed.</li>
+                    <li>Responsive and user-friendly.</li>
+                </ul>
+                <strong>Technologies Used:</strong>
+                <ul>
+                    <li>HTML</li><li>CSS</li><li>JavaScript</li><li>OpenWeatherMap API</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Your Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Your Email">
+
+            <label>Purpose:</label>
+            <label><input type="radio" name="purpose" value="Business" required> Business</label>
+            <label><input type="radio" name="purpose" value="Personal"> Personal</label>
+            <label><input type="radio" name="purpose" value="Other"> Other</label>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required minlength="10" placeholder="Your Message"></textarea>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
